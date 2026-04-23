@@ -1,0 +1,16 @@
+doc_id_1,doc_id_2,edit_type
+49,85,exact
+53,86,exact
+5,87,exact
+33,88,exact
+65,89,punctuation
+62,90,punctuation
+51,91,punctuation
+32,92,typo
+68,93,typo
+77,94,typo
+55,95,word_sub
+40,96,word_sub
+78,97,word_sub
+61,98,reorder
+7,99,prefix_suffix

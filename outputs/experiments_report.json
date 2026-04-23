@@ -1,0 +1,618 @@
+{
+  "baseline": {
+    "label": "baseline",
+    "shingle_k": 3,
+    "shingle_mode": "word",
+    "k_hashes": 64,
+    "b": 16,
+    "r": 4,
+    "tau": 0.8,
+    "keep_rule": "longest",
+    "num_candidates": 22532,
+    "num_above_tau": 6000,
+    "final_corpus_size": 90032,
+    "sig_time_s": 1.96,
+    "lsh_time_s": 1.73,
+    "verify_time_s": 0.09,
+    "overall_recall": 0.6035333333333334,
+    "precision_strict_vs_gt": 0.75,
+    "detected_total": 6000,
+    "detected_in_gt": 4500,
+    "detected_not_in_gt": 1500,
+    "caught": 9053,
+    "missed": 5947,
+    "by_edit_type": {
+      "exact": {
+        "caught": 3000
+      },
+      "punctuation": {
+        "missed": 947,
+        "caught": 2053
+      },
+      "typo": {
+        "missed": 2395,
+        "caught": 605
+      },
+      "word_sub": {
+        "missed": 1727,
+        "caught": 1273
+      },
+      "reorder": {
+        "caught": 650,
+        "missed": 850
+      },
+      "prefix_suffix": {
+        "caught": 1472,
+        "missed": 28
+      }
+    }
+  },
+  "exp_A_shingle_type": [
+    {
+      "label": "A 3-word",
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "tau": 0.8,
+      "keep_rule": "longest",
+      "num_candidates": 22532,
+      "num_above_tau": 6000,
+      "final_corpus_size": 90032,
+      "sig_time_s": 2.02,
+      "lsh_time_s": 1.75,
+      "verify_time_s": 0.09,
+      "overall_recall": 0.6035333333333334,
+      "precision_strict_vs_gt": 0.75,
+      "detected_total": 6000,
+      "detected_in_gt": 4500,
+      "detected_not_in_gt": 1500,
+      "caught": 9053,
+      "missed": 5947,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 947,
+          "caught": 2053
+        },
+        "typo": {
+          "missed": 2395,
+          "caught": 605
+        },
+        "word_sub": {
+          "missed": 1727,
+          "caught": 1273
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1472,
+          "missed": 28
+        }
+      }
+    },
+    {
+      "label": "A 5-word",
+      "shingle_k": 5,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "tau": 0.8,
+      "keep_rule": "longest",
+      "num_candidates": 17353,
+      "num_above_tau": 3275,
+      "final_corpus_size": 92685,
+      "sig_time_s": 1.96,
+      "lsh_time_s": 2.84,
+      "verify_time_s": 0.06,
+      "overall_recall": 0.4792,
+      "precision_strict_vs_gt": 0.8229007633587786,
+      "detected_total": 3275,
+      "detected_in_gt": 2695,
+      "detected_not_in_gt": 580,
+      "caught": 7188,
+      "missed": 7812,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 1353,
+          "caught": 1647
+        },
+        "typo": {
+          "missed": 2765,
+          "caught": 235
+        },
+        "word_sub": {
+          "missed": 2502,
+          "caught": 498
+        },
+        "reorder": {
+          "caught": 358,
+          "missed": 1142
+        },
+        "prefix_suffix": {
+          "caught": 1450,
+          "missed": 50
+        }
+      }
+    },
+    {
+      "label": "A 5-char",
+      "shingle_k": 5,
+      "shingle_mode": "char",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "tau": 0.8,
+      "keep_rule": "longest",
+      "num_candidates": 56380,
+      "num_above_tau": 14413,
+      "final_corpus_size": 82614,
+      "sig_time_s": 9.52,
+      "lsh_time_s": 7.58,
+      "verify_time_s": 0.78,
+      "overall_recall": 0.9399333333333333,
+      "precision_strict_vs_gt": 0.6761257198362589,
+      "detected_total": 14413,
+      "detected_in_gt": 9745,
+      "detected_not_in_gt": 4668,
+      "caught": 14099,
+      "missed": 901,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "caught": 2980,
+          "missed": 20
+        },
+        "typo": {
+          "caught": 2980,
+          "missed": 20
+        },
+        "word_sub": {
+          "caught": 2927,
+          "missed": 73
+        },
+        "reorder": {
+          "caught": 736,
+          "missed": 764
+        },
+        "prefix_suffix": {
+          "caught": 1476,
+          "missed": 24
+        }
+      }
+    }
+  ],
+  "exp_B_signature_length": [
+    {
+      "label": "B k=32",
+      "k_hashes": 32,
+      "b": 8,
+      "r": 4,
+      "tau": 0.8,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "num_candidates": 18722,
+      "num_above_tau": 5978,
+      "final_corpus_size": 90052,
+      "sig_time_s": 1.77,
+      "sig_memory_mb": 24.5,
+      "estimator_err_mean": -0.0008,
+      "estimator_err_std": 0.0719,
+      "theoretical_err_std_at_j_0p5": 0.0884,
+      "overall_recall": 0.6029333333333333,
+      "precision_strict_vs_gt": 0.751254600200736,
+      "detected_total": 5978,
+      "detected_in_gt": 4491,
+      "detected_not_in_gt": 1487,
+      "caught": 9044,
+      "missed": 5956,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 948,
+          "caught": 2052
+        },
+        "typo": {
+          "missed": 2396,
+          "caught": 604
+        },
+        "word_sub": {
+          "missed": 1731,
+          "caught": 1269
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1469,
+          "missed": 31
+        }
+      }
+    },
+    {
+      "label": "B k=64",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "tau": 0.8,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "num_candidates": 22532,
+      "num_above_tau": 6000,
+      "final_corpus_size": 90032,
+      "sig_time_s": 2.0,
+      "sig_memory_mb": 49.1,
+      "estimator_err_mean": -0.004,
+      "estimator_err_std": 0.0485,
+      "theoretical_err_std_at_j_0p5": 0.0625,
+      "overall_recall": 0.6035333333333334,
+      "precision_strict_vs_gt": 0.75,
+      "detected_total": 6000,
+      "detected_in_gt": 4500,
+      "detected_not_in_gt": 1500,
+      "caught": 9053,
+      "missed": 5947,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 947,
+          "caught": 2053
+        },
+        "typo": {
+          "missed": 2395,
+          "caught": 605
+        },
+        "word_sub": {
+          "missed": 1727,
+          "caught": 1273
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1472,
+          "missed": 28
+        }
+      }
+    },
+    {
+      "label": "B k=128",
+      "k_hashes": 128,
+      "b": 32,
+      "r": 4,
+      "tau": 0.8,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "num_candidates": 26702,
+      "num_above_tau": 6001,
+      "final_corpus_size": 90031,
+      "sig_time_s": 2.54,
+      "sig_memory_mb": 98.2,
+      "estimator_err_mean": -0.0003,
+      "estimator_err_std": 0.0358,
+      "theoretical_err_std_at_j_0p5": 0.0442,
+      "overall_recall": 0.6036,
+      "precision_strict_vs_gt": 0.7500416597233794,
+      "detected_total": 6001,
+      "detected_in_gt": 4501,
+      "detected_not_in_gt": 1500,
+      "caught": 9054,
+      "missed": 5946,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 947,
+          "caught": 2053
+        },
+        "typo": {
+          "missed": 2394,
+          "caught": 606
+        },
+        "word_sub": {
+          "missed": 1727,
+          "caught": 1273
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1472,
+          "missed": 28
+        }
+      }
+    }
+  ],
+  "exp_C_banding": [
+    {
+      "label": "C b=16 r=4",
+      "b": 16,
+      "r": 4,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "tau": 0.8,
+      "s_curve_threshold_approx": 0.5,
+      "num_candidates": 22532,
+      "num_above_tau": 6000,
+      "final_corpus_size": 90032,
+      "lsh_time_s": 1.69,
+      "overall_recall": 0.6035333333333334,
+      "precision_strict_vs_gt": 0.75,
+      "detected_total": 6000,
+      "detected_in_gt": 4500,
+      "detected_not_in_gt": 1500,
+      "caught": 9053,
+      "missed": 5947,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 947,
+          "caught": 2053
+        },
+        "typo": {
+          "missed": 2395,
+          "caught": 605
+        },
+        "word_sub": {
+          "missed": 1727,
+          "caught": 1273
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1472,
+          "missed": 28
+        }
+      }
+    },
+    {
+      "label": "C b=8 r=8",
+      "b": 8,
+      "r": 8,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "tau": 0.8,
+      "s_curve_threshold_approx": 0.771,
+      "num_candidates": 9602,
+      "num_above_tau": 5543,
+      "final_corpus_size": 90475,
+      "lsh_time_s": 0.85,
+      "overall_recall": 0.5830666666666666,
+      "precision_strict_vs_gt": 0.7573516146491069,
+      "detected_total": 5543,
+      "detected_in_gt": 4198,
+      "detected_not_in_gt": 1345,
+      "caught": 8746,
+      "missed": 6254,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 1001,
+          "caught": 1999
+        },
+        "typo": {
+          "missed": 2446,
+          "caught": 554
+        },
+        "word_sub": {
+          "missed": 1840,
+          "caught": 1160
+        },
+        "reorder": {
+          "caught": 630,
+          "missed": 870
+        },
+        "prefix_suffix": {
+          "caught": 1403,
+          "missed": 97
+        }
+      }
+    },
+    {
+      "label": "C b=32 r=2",
+      "b": 32,
+      "r": 2,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "tau": 0.8,
+      "s_curve_threshold_approx": 0.177,
+      "num_candidates": 332149,
+      "num_above_tau": 6001,
+      "final_corpus_size": 90031,
+      "lsh_time_s": 3.9,
+      "overall_recall": 0.6036,
+      "precision_strict_vs_gt": 0.7500416597233794,
+      "detected_total": 6001,
+      "detected_in_gt": 4501,
+      "detected_not_in_gt": 1500,
+      "caught": 9054,
+      "missed": 5946,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 947,
+          "caught": 2053
+        },
+        "typo": {
+          "missed": 2394,
+          "caught": 606
+        },
+        "word_sub": {
+          "missed": 1727,
+          "caught": 1273
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1472,
+          "missed": 28
+        }
+      }
+    }
+  ],
+  "exp_D_threshold": [
+    {
+      "label": "D tau=0.7",
+      "tau": 0.7,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "num_candidates": 22532,
+      "num_above_tau": 10776,
+      "final_corpus_size": 85614,
+      "overall_recall": 0.8084666666666667,
+      "precision_strict_vs_gt": 0.7106533036377134,
+      "detected_total": 10776,
+      "detected_in_gt": 7658,
+      "detected_not_in_gt": 3118,
+      "caught": 12127,
+      "missed": 2873,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "caught": 2505,
+          "missed": 495
+        },
+        "typo": {
+          "missed": 872,
+          "caught": 2128
+        },
+        "word_sub": {
+          "caught": 2284,
+          "missed": 716
+        },
+        "reorder": {
+          "caught": 710,
+          "missed": 790
+        },
+        "prefix_suffix": {
+          "caught": 1500
+        }
+      }
+    },
+    {
+      "label": "D tau=0.8",
+      "tau": 0.8,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "num_candidates": 22532,
+      "num_above_tau": 6000,
+      "final_corpus_size": 90032,
+      "overall_recall": 0.6035333333333334,
+      "precision_strict_vs_gt": 0.75,
+      "detected_total": 6000,
+      "detected_in_gt": 4500,
+      "detected_not_in_gt": 1500,
+      "caught": 9053,
+      "missed": 5947,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 947,
+          "caught": 2053
+        },
+        "typo": {
+          "missed": 2395,
+          "caught": 605
+        },
+        "word_sub": {
+          "missed": 1727,
+          "caught": 1273
+        },
+        "reorder": {
+          "caught": 650,
+          "missed": 850
+        },
+        "prefix_suffix": {
+          "caught": 1472,
+          "missed": 28
+        }
+      }
+    },
+    {
+      "label": "D tau=0.9",
+      "tau": 0.9,
+      "shingle_k": 3,
+      "shingle_mode": "word",
+      "k_hashes": 64,
+      "b": 16,
+      "r": 4,
+      "num_candidates": 22532,
+      "num_above_tau": 2083,
+      "final_corpus_size": 93798,
+      "overall_recall": 0.41773333333333335,
+      "precision_strict_vs_gt": 0.8804608737397984,
+      "detected_total": 2083,
+      "detected_in_gt": 1834,
+      "detected_not_in_gt": 249,
+      "caught": 6266,
+      "missed": 8734,
+      "by_edit_type": {
+        "exact": {
+          "caught": 3000
+        },
+        "punctuation": {
+          "missed": 1447,
+          "caught": 1553
+        },
+        "typo": {
+          "missed": 2863,
+          "caught": 137
+        },
+        "word_sub": {
+          "missed": 2745,
+          "caught": 255
+        },
+        "reorder": {
+          "caught": 324,
+          "missed": 1176
+        },
+        "prefix_suffix": {
+          "caught": 997,
+          "missed": 503
+        }
+      }
+    }
+  ]
+}

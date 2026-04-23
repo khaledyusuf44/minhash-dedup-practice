@@ -1,0 +1,51 @@
+{
+  "tau": 0.8,
+  "keep_rule": "longest",
+  "shingle": "k=3 word",
+  "original_corpus_size": 100000,
+  "phase2_exact_dedup_removed": 4124,
+  "phase2_survivors": 95876,
+  "candidate_pairs_evaluated": 22532,
+  "above_threshold_pairs": 6000,
+  "below_threshold_pairs": 16532,
+  "clusters_formed": 5479,
+  "docs_in_clusters": 11323,
+  "phase6_near_dedup_removed": 5844,
+  "final_corpus_size": 90032,
+  "total_removed": 9968,
+  "reduction_pct": 9.968,
+  "ground_truth_total_caught": 9053,
+  "ground_truth_total_missed": 5947,
+  "ground_truth_overall_recall": 0.6035333333333334,
+  "ground_truth_by_edit_type": {
+    "exact": {
+      "caught_one_removed": 2789,
+      "caught_both_removed": 211
+    },
+    "punctuation": {
+      "missed": 947,
+      "caught_one_removed": 1937,
+      "caught_both_removed": 116
+    },
+    "typo": {
+      "missed": 2395,
+      "caught_both_removed": 37,
+      "caught_one_removed": 568
+    },
+    "word_sub": {
+      "missed": 1727,
+      "caught_one_removed": 1215,
+      "caught_both_removed": 58
+    },
+    "reorder": {
+      "caught_one_removed": 617,
+      "missed": 850,
+      "caught_both_removed": 33
+    },
+    "prefix_suffix": {
+      "caught_one_removed": 1456,
+      "missed": 28,
+      "caught_both_removed": 16
+    }
+  }
+}

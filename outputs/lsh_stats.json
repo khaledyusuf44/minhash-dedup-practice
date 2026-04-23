@@ -1,0 +1,49 @@
+{
+  "b": 16,
+  "r": 4,
+  "k": 64,
+  "N_docs": 95876,
+  "all_pairs": 4596055750,
+  "candidate_pairs": 22532,
+  "reduction_ratio": 0.9999950975355336,
+  "candidates_as_pct_of_all_pairs": 0.0004902464466406875,
+  "mean_shared_bands": 4.673087164921001,
+  "max_shared_bands": 16,
+  "top_10_shared_bands": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "s_curve_threshold": 0.5,
+  "output_file": "/Users/khalidyusufdahir/Desktop/projects/ai_projects/minhash-dedup-practice/outputs/candidate_pairs.csv",
+  "ground_truth": {
+    "caught": {
+      "punctuation": 1898,
+      "typo": 2861,
+      "word_sub": 2836,
+      "reorder": 689,
+      "prefix_suffix": 1454
+    },
+    "missed": {
+      "punctuation": 90,
+      "typo": 75,
+      "word_sub": 75,
+      "reorder": 773
+    },
+    "unreachable": {
+      "exact": 3000,
+      "punctuation": 1012,
+      "typo": 64,
+      "word_sub": 89,
+      "reorder": 38,
+      "prefix_suffix": 46
+    }
+  }
+}

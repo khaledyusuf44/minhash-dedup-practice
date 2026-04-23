@@ -1,0 +1,33 @@
+{
+  "total_rows": 100000,
+  "distinct_groups": 95876,
+  "rows_removed": 4124,
+  "groups_with_duplicates": 4028,
+  "largest_group_size": 4,
+  "top_10_group_sizes": [
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "mode": "conservative",
+  "strip_punct": false,
+  "ground_truth_caught": {
+    "exact": 3000,
+    "punctuation": 955,
+    "word_sub": 3
+  },
+  "ground_truth_missed": {
+    "punctuation": 2045,
+    "typo": 3000,
+    "word_sub": 2997,
+    "reorder": 1500,
+    "prefix_suffix": 1500
+  }
+}
